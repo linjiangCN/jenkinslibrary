@@ -32,7 +32,7 @@ stages{
         steps{
             script{
                     tools.PrintMes("执行打包","green")
-                    artifactory.build(buildType,buildShell)
+                    artifactory.Build(buildType,buildShell)
                    // artifactory.PushArtifact()
             }
         }
