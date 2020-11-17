@@ -27,9 +27,9 @@ stages{
     stage("Build"){
         steps{
             script{
-                tools.PrintMes("运行构建","green")
-                 sh label: '', script: '''export JAVA_HOME=/usr/local/tcsa/base_servie/jdk1.8.0_221
-                /usr/local/tcsa/base_servie/apache-maven-3.6.3/bin/mvn   clean install -Dmaven.test.skip=true'''
+                    tools.PrintMes("执行打包","green")
+                    artifactory.main(buildType,buildShell)
+                    artifactory.PushArtifact()
             }
         }
     }
