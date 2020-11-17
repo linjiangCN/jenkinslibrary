@@ -29,7 +29,7 @@ stages{
             script{
                     tools.PrintMes("执行打包","green")
                     artifactory.main(buildType,buildShell)
-                    artifactory.PushArtifact()
+                   // artifactory.PushArtifact()
             }
         }
     }
