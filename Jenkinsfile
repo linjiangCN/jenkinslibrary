@@ -24,7 +24,7 @@ stages{
         steps{
             script{
                tools.PrintMes("拉取代码","green")
-               git branch: 'prod', credentialsId: 'd99f3ea4-2d2f-483a-8f1f-2ccd34f165bd', url: 'git@10.10.3.235:application-platform-department-group/qc-meeting.git'
+               //git branch: 'prod', credentialsId: 'd99f3ea4-2d2f-483a-8f1f-2ccd34f165bd', url: 'git@10.10.3.235:application-platform-department-group/qc-meeting.git'
             }
         }
     }
