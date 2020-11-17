@@ -4,8 +4,12 @@
 
 //func from shareibrary
 def tools = new org.devops.tools()
+def build = new org.devops.build()
 
-String workspace = "/opt/jenkins/workspace"
+
+//env
+String buildType = "${env.buildType}"
+String buildShell = "${env.buildShell}"
 
 pipeline{
 //指定运行此流水线的节点
