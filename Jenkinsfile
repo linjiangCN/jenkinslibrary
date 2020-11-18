@@ -11,6 +11,8 @@ def build = new org.devops.build()
 String buildType = "${env.buildType}"
 String buildShell = "${env.buildShell}"
 
+String workspace = "/opt/jenkins/workspace"
+
 pipeline{
 //指定运行此流水线的节点
 agent { node { label "master"}}
