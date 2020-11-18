@@ -13,7 +13,7 @@ String buildShell = "${env.buildShell}"
 
 pipeline{
 //指定运行此流水线的节点
-agent { node { label "master"}}
+agent { node { label "qc-slave"}}
     
 
 //流水线的阶段
