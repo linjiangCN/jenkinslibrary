@@ -31,7 +31,6 @@ stages{
     stage("Build"){
         steps{
             script{
-                    sh label: '', script: 'export JAVA_HOME=/usr/local/tcsa/base_service/jdk1.8.0_221/bin'
                     tools.PrintMes("执行打包","green")
                     build.Build(buildType,buildShell)
                    // artifactory.PushArtifact()
