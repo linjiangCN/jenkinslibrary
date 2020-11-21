@@ -3,7 +3,7 @@ package org.devops
 
 //scan
 def SonarScan(projectName,projectDesc,javaPath){
-        withSonarQubeEnv("sonarqube")
+        withSonarQubeEnv("sonarqube-service"){
         def scannerHome = "/usr/local/tcsa/base_service/sonar-scanner-4.2.0.1873-linux"
         def sonarDate = sh  returnStdout: true, script: 'date  +%Y%m%d%H%M%S'
         sonarDate = sonarDate - "\n"
@@ -25,4 +25,4 @@ def SonarScan(projectName,projectDesc,javaPath){
               -Dsonar.java.surefire.report=target/surefire-reports
         """
     }
-    
+}
