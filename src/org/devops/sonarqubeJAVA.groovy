@@ -2,7 +2,7 @@ package org.devops
 
 
 //scan
-def SonarScan(projectName,projectDesc){
+def SonarScan(projectName,projectDesc,javaPath){
         def scannerHome = "/usr/local/tcsa/base_service/sonar-scanner-4.2.0.1873-linux"
         def sonarServer = "http://10.10.3.220:9000"
         def sonarUser = "admin"
