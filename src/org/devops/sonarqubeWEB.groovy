@@ -10,7 +10,7 @@ def SonarScan(projectName,projectDesc){
     
         
         sh """ 
-              cd  ${javaPath} && ${scannerHome}/bin/sonar-scanner  \
+              ${scannerHome}/bin/sonar-scanner  \
               -Dsonar.projectKey=${projectName} \
               -Dsonar.projectName=${projectName}  \
               -Dsonar.projectVersion=${sonarDate} \
